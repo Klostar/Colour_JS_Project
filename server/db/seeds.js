@@ -65,6 +65,22 @@ db.colour.insertMany([
 },
 {
   name: "brown",
+  symbolism: "Brown says stability, reliability, and approachability. It is the color of our earth and is associated with all things natural or organic",
+  affects: ["supplies a feeling of wholesomeness","gives a sense orderliness","provides a connection with the earth"],
+  randomFact: "If you dream of the color brown, it means you will be lucky with money.",
+  brand: ["galaxy Chocolate","hersheys","UPS"],
+  colourValue:
+},
+{
+  name: "gray",
+  symbolism: "Gray is the color of intellect, knowledge, and wisdom. It is perceived as long-lasting, classic, and often as sleek or refined. It is a color that is dignified, conservative, and carries authority. Gray is controlled and inconspicuous and is considered a color of compromise, perhaps because it sits between the extremes of black and white. Gray is a perfect neutral, which is why designers often use it as a background color.",
+  affects: ["Unsettles","Creates expectations"],
+  randomFact: "The human eye can distinguish about 500 shades of gray.",
+  brand: ["apple","forbes","swarovski"],
+  colourValue:"	#808080"
+},
+{
+  name: "black",
   symbolism: ,
   affects: [],
   randomFact: ,
@@ -72,23 +88,7 @@ db.colour.insertMany([
   colourValue:
 },
 {
-  name: 'grey',
-  symbolism: ,
-  affects: [],
-  randomFact: ,
-  brand: [],
-  colourValue:
-},
-{
-  name: 'black',
-  symbolism: ,
-  affects: [],
-  randomFact: ,
-  brand: [],
-  colourValue:
-},
-{
-  name: 'white',
+  name: "white",
   symbolism: ,
   affects: [],
   randomFact: ,
