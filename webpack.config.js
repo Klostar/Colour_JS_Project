@@ -1,10 +1,10 @@
 const config = {
-  entry: `${__dirname}/client/src/app.js`, // entry point, first line of code that executes (dirname = pwd)
+  entry: `${__dirname}/client/src/app.js`,
   output: {
-    path: `${__dirname}/client/public/js`, // describing the file we want webpack to create (dirname = pwd)
-    filename: 'bundle.js' // file name output, convention is bundle.js
+    path: `${__dirname}/client/public/js`,
+    filename: 'bundle.js'
   },
-  mode: 'development' // set development mode
+  mode: 'development'
 };
 
 module.exports = config;
