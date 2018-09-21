@@ -17,6 +17,8 @@ const createRouter = function(collection){
         });
     });
 
+    return router
+
     // router.get('/:id', (req, res) => {
     //   const id = req.params.id;
     //   collection
