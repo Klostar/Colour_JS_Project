@@ -1,9 +1,6 @@
 const PubSub = require('../helpers/pub_sub.js');
 const Request = require('../helpers/request.js');
-
-const GridView = function (selectElement) {
-  this.element = selectElement
-};
+const CellView = require('./cell_view.js');
 
 
-model.exports = GridView;
+module.exports = GridView;
