@@ -33,6 +33,6 @@ const createRouter = function(collection){
 
 };
 
-// no other restful routes needed as wont be editing deleting or adding any information to page
+// no other restful routes needed as wont be editing deleting or adding any info
 
 module.exports = createRouter;
