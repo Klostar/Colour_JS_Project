@@ -81,18 +81,18 @@ db.colour.insertMany([
 },
 {
   name: "black",
-  symbolism: ,
-  affects: [],
-  randomFact: ,
-  brand: [],
-  colourValue:
+  symbolism: "Black is authoritative and powerful; because black can evoke strong emotions, too much can be overwhelming. Black represents a lack of color, the primordial void, emptiness. It is a classic color for clothing, possibly because it makes the wearer appear thinner and more sophisticated.",
+  affects: ["makes one feel inconspicuous","provides a restful emptiness","is mysterious by evoking a sense of potential and possibility"],
+  randomFact:"The color black is so widely regarded as sophisticated in fashion that the term “the new black” is often used to describe and give merit to a color trend." ,
+  brand: ["channel","addidas","gucci"],
+  colourValue:"#000000"
 },
 {
   name: "white",
-  symbolism: ,
-  affects: [],
-  randomFact: ,
-  brand: [],
-  colourValue:
+  symbolism: "The color white projects purity, cleanliness, and neutrality. Doctors don white coats, brides traditionally wear white gowns, and a white picket fence surrounds a safe and happy home.",
+  affects: ["Aids mental clarity","Enables fresh beginnings","Evokes purification of thoughts or actions"],
+  randomFact: "White clothing typically becomes translucent when wet. hence white Tshirt competitions becoming popular",
+  brand: ["mini","tesla","abc"],
+  colourValue: "#FFFFFF"
 }]
 );
