@@ -1,0 +1,23 @@
+{
+  "name": "colour",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node /server/server.js",
+    "server:dev": "nodemon server/server.js",
+    "build":"webpack -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongodb": "^3.1.6",
+    "nodemon": "^1.18.4",
+    "npm": "^6.4.1",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
