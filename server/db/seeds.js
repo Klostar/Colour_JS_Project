@@ -38,15 +38,16 @@ db.colour.insertMany([
   colourValue: "#00AF33"
 },
 {
-  name: 'blue',
+  name: "blue",
   symbolism: "Blue is the overwhelming “favorite color.” Blue is seen as trustworthy, dependable, and committed. Blue is the least “gender specific” color, having equal appeal to both men and women. The color of ocean and sky, blue is perceived as a constant in our lives. As the collective color of the spirit, it invokes rest and can cause the body to produce chemicals that are calming. However, not all blues are serene and sedate. Electric or brilliant blues become dynamic and dramatic — an engaging color that expresses exhilaration. Some shades or the overuse of blue may come across as cold or uncaring. Indigo, a deeper blue, symbolizes a mystical borderland of wisdom, self-mastery, and spiritual realization. While blue is the color of communication with others, indigo turns the blue inward to increase personal thought, profound insights, and instant understandings.",
+
   affects: ["calming","cooling","aids intuition"],
   randomFact:"Blue is the favored color choice for toothbrushes." ,
   brand: ["NHS","facebook","samsung"],
   colourValue:"#0000FF"
 },
 {
-  name: 'purple',
+  name: "purple",
   symbolism: "Purple embodies the balance of red’s stimulation and blue’s calm. This dichotomy can cause unrest or uneasiness unless the undertone is clearly defined, at which point the purple takes on the characteristics of its undertone. With a sense of mystic and royal qualities, purple is a color often well liked by very creative or eccentric types and is the favorite color of adolescent girls.",
   affects: ["uplifts","offers a sense of spirituality","calms the mind and nerves"],
   randomFact: "Purple was the color of the first dye made by man. It was called “Mauveine” and was made out of coal tar. The recipe was discovered by William Henry Perkin in 1856.",
@@ -55,15 +56,15 @@ db.colour.insertMany([
 },
 
 {
-  name: 'pink',
-  symbolism: ,
-  affects: [],
-  randomFact: ,
-  brand: [],
+  name: "pink",
+  symbolism: "Brighter pinks are youthful, fun, and exciting, while vibrant pinks have the same high energy as red; they are sensual and passionate without being too aggressive. Toning down the passion of red with the purity of white results in the softer pinks that are associated with romance. It’s not surprising that when giving or receiving flowers, pink blossoms are a favorite. Pink is the color of happiness and is sometimes seen as lighthearted.",
+  affects: ["encourages action and confidence","Pink has been used in prison holding cells to effectively reduce erratic behavior."],
+  randomFact: "Some studies of the color pink suggest that male weightlifters seem to lose strength in pink rooms, while women weightlifters tend to become stronger around the color.",
+  brand: ["barbie", "cosmopolitan","Victoria Secret"],
   colourValue:
 },
 {
-  name: 'brown',
+  name: "brown",
   symbolism: ,
   affects: [],
   randomFact: ,
