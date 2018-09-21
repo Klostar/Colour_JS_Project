@@ -29,9 +29,10 @@ const createRouter = function(collection){
       });
   });
 
-
   return router;
 
 };
+
+// no other restful routes needed as wont be editing deleting or adding any information to page
 
 module.exports = createRouter;
