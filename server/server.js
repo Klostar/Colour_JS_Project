@@ -13,8 +13,8 @@ app.use(express.static(publicPath));
 MongoClient.connect('mongodb://localhost:27017')
   .then((client) => {
     const db = client.db('colours');
-    const listCollection = db.collection('colour');
-    const listRouter = createRouter(colourCollection);
+    const colourCollection = db.collection('colour');
+    const colourRouter = createRouter(colourCollection);
     app.use('/api/colour', colourRouter);
   })
   .catch(console.err);
