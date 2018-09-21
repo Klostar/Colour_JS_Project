@@ -40,7 +40,6 @@ db.colour.insertMany([
 {
   name: "blue",
   symbolism: "Blue is the overwhelming “favorite color.” Blue is seen as trustworthy, dependable, and committed. Blue is the least “gender specific” color, having equal appeal to both men and women. The color of ocean and sky, blue is perceived as a constant in our lives. As the collective color of the spirit, it invokes rest and can cause the body to produce chemicals that are calming. However, not all blues are serene and sedate. Electric or brilliant blues become dynamic and dramatic — an engaging color that expresses exhilaration. Some shades or the overuse of blue may come across as cold or uncaring. Indigo, a deeper blue, symbolizes a mystical borderland of wisdom, self-mastery, and spiritual realization. While blue is the color of communication with others, indigo turns the blue inward to increase personal thought, profound insights, and instant understandings.",
-
   affects: ["calming","cooling","aids intuition"],
   randomFact:"Blue is the favored color choice for toothbrushes." ,
   brand: ["NHS","facebook","samsung"],
@@ -54,14 +53,13 @@ db.colour.insertMany([
   brand: ["cadburys","monster","taco bell"],
   colourValue:"	#800080"
 },
-
 {
   name: "pink",
   symbolism: "Brighter pinks are youthful, fun, and exciting, while vibrant pinks have the same high energy as red; they are sensual and passionate without being too aggressive. Toning down the passion of red with the purity of white results in the softer pinks that are associated with romance. It’s not surprising that when giving or receiving flowers, pink blossoms are a favorite. Pink is the color of happiness and is sometimes seen as lighthearted.",
   affects: ["encourages action and confidence","Pink has been used in prison holding cells to effectively reduce erratic behavior."],
   randomFact: "Some studies of the color pink suggest that male weightlifters seem to lose strength in pink rooms, while women weightlifters tend to become stronger around the color.",
   brand: ["barbie", "cosmopolitan","Victoria Secret"],
-  colourValue:
+  colourValue: "#FFC0CB"
 },
 {
   name: "brown",
@@ -69,7 +67,7 @@ db.colour.insertMany([
   affects: ["supplies a feeling of wholesomeness","gives a sense orderliness","provides a connection with the earth"],
   randomFact: "If you dream of the color brown, it means you will be lucky with money.",
   brand: ["galaxy Chocolate","hersheys","UPS"],
-  colourValue:
+  colourValue: "#A52A2A"
 },
 {
   name: "gray",
@@ -77,7 +75,7 @@ db.colour.insertMany([
   affects: ["Unsettles","Creates expectations"],
   randomFact: "The human eye can distinguish about 500 shades of gray.",
   brand: ["apple","forbes","swarovski"],
-  colourValue:"	#808080"
+  colourValue: "#808080"
 },
 {
   name: "black",
@@ -85,7 +83,7 @@ db.colour.insertMany([
   affects: ["makes one feel inconspicuous","provides a restful emptiness","is mysterious by evoking a sense of potential and possibility"],
   randomFact:"The color black is so widely regarded as sophisticated in fashion that the term “the new black” is often used to describe and give merit to a color trend." ,
   brand: ["channel","addidas","gucci"],
-  colourValue:"#000000"
+  colourValue: "#000000"
 },
 {
   name: "white",
@@ -94,5 +92,5 @@ db.colour.insertMany([
   randomFact: "White clothing typically becomes translucent when wet. hence white Tshirt competitions becoming popular",
   brand: ["mini","tesla","abc"],
   colourValue: "#FFFFFF"
-}]
-);
+}
+]);
