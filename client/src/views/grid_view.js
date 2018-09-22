@@ -12,8 +12,8 @@ GridView.prototype.bindEvents = function () {
   event.detail.forEach((colour) => {
     const div = document.createElement('div');
     div.classList.add('colour-item');
-    this.element.appendChild(div);
-    const colourItem = new CellView('div')
+    // this.element.appendChild('div');
+    const colourItem = new CellView(div)
     colourItem.render(colour)
   })
 
