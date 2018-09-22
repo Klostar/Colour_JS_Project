@@ -1,21 +1,23 @@
 const PubSub = require('../helpers/pub_sub.js');
-
-const CellView = function (container) {
-this.container = container;
+const Request = require('../helpers/request.js');
+const CellView = function (elemenet) {
+this.element = element;
 };
 
+CellView.prototype.render = function (colourItem) {
 
-CellView.prototype.createColourDetail = function (colour) {
-  const colourContainer = document.createElement('div');
-  colourDetial.id = 'colour-detail';
+  const name = document.createElement('h2');
+  name.textContent = colourItem.name;
+  this.element.appendChild(name);
+  console.log(name);
 
-  const name = this.createHeading(colour.name);
-  colourContainer.appendChild(name)
-
-  const symbolism = this.createDetail('Symbolism', colour.symbolism);
-  colourContainer.appendChild(symbolism)
-
-  this.container.appendChild(colourContainer);
+  // const name = this.createHeading(colour.name);
+  // colourContainer.appendChild(name)
+  //
+  // const symbolism = this.createDetail('Symbolism', colour.symbolism);
+  // colourContainer.appendChild(symbolism)
+  //
+  // this.container.appendChild(colourContainer);
 
 
 
