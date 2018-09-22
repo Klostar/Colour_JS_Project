@@ -9,8 +9,8 @@ const Colour = function (url) {
 Colour.prototype.getData = function () {
   const request = new Request(this.url);
   request.get()
-  .then((colour) => {
-    PubSub.publish('Colour:all-data', colour)
+  .then((colourItem) => {
+    PubSub.publish('Colour:all-data',colourItem)
   })
 .catch(console.err)
 };

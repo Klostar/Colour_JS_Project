@@ -15,10 +15,15 @@ GridView.prototype.bindEvents = function () {
     // this.element.appendChild('div');
     const colourItem = new CellView(div)
     colourItem.render(colour)
+    console.log(colour);
   })
 
   })
 
+GridView.prototype.render = function (colourItem) {
+  const cellView = new CellView(this.element);
+
+};
 };
 
 module.exports = GridView;

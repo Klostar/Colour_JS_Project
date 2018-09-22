@@ -5,11 +5,12 @@ this.element = element;
 };
 
 CellView.prototype.render = function (colourItem) {
-
   const name = document.createElement('h2');
   name.textContent = colourItem.name;
   this.element.appendChild(name);
   console.log(name);
+
+
 
   // const name = this.createHeading(colour.name);
   // colourContainer.appendChild(name)
