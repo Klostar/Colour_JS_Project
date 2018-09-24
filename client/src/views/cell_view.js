@@ -26,7 +26,7 @@ CellView.prototype.render = function () {
   const randomFactTitle = this.createTextElement('h3',`Interesting Fact about ${this.colour.name}` )
   this.element.appendChild(randomFactTitle);
 
-  const randomFact = document.createElement('h4')
+  const randomFact = document.createElement('p')
   randomFact.textContent = this.colour.randomFact;
   this.element.appendChild(randomFact)
 
@@ -37,11 +37,14 @@ CellView.prototype.render = function () {
   this.populateBrandList(this.colour.brand, brandList);
   this.element.appendChild(brandList);
 
+  const colourSquare = document.createElement();
+  //create square colour box for every colour. 
+
 };
 
 CellView.prototype.populateAffectList = function (affects, list) {
   affects.forEach((affect) => {
-    console.log(affect);
+    // console.log(affect);
     const listItem = document.createElement('li');
     listItem.textContent = affect;
     list.appendChild(listItem)
@@ -52,7 +55,7 @@ CellView.prototype.populateBrandList = function (brand, list) {
   brand.forEach((brand) => {
     const brandListItem = document.createElement('li');
     brandListItem.textContent = brand;
-    console.log(this.colour.brand);
+    // console.log(this.colour.brand);
     list.appendChild(brandListItem)
 
   })
@@ -79,9 +82,6 @@ CellView.prototype.createTextElement = function (elementType, text) {
 };
 
 
-
-
-
   // const name = this.createHeading(colour.name);
   // colourContainer.appendChild(name)
   //
@@ -89,9 +89,6 @@ CellView.prototype.createTextElement = function (elementType, text) {
   // colourContainer.appendChild(symbolism)
   //
   // this.container.appendChild(colourContainer);
-
-
-
 
 
 
