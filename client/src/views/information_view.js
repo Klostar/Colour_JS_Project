@@ -15,7 +15,9 @@ InformationView.prototype.bindEvents = function () {
   })
 };
 
+
 InformationView.prototype.render = function () {
+  this.element.innerHTML = '';
   const colorInfo = document.createElement('div');
 
   const name = document.createElement('h2');
