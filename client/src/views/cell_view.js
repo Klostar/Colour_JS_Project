@@ -37,8 +37,11 @@ CellView.prototype.render = function () {
   this.populateBrandList(this.colour.brand, brandList);
   this.element.appendChild(brandList);
 
-  const colourSquare = document.createElement();
-  //create square colour box for every colour. 
+  const colourSquare = document.createElement('div');
+  colourSquare.classList.add('square');
+  this.element.appendChild(colourSquare);
+  //create square colour box for every colour.
+
 
 };
 
