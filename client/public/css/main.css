@@ -1,10 +1,3 @@
-
-/* no longer needed .square {
-  height: 50px;
-  width: 50px;
-  border: 1px solid black;
-} */
-
 body{
       font: 14px Helvetica;
       transition: 5s cubic-bezier(1, 1, 1, 1);
@@ -36,4 +29,15 @@ body{
 #colours-list{
   padding: 0px;
   margin: 0px;
+}
+
+.square{
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+
+}
+
+.colour-item{
+  display: inline;
 }
