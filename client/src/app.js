@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
   informationView.bindEvents();
 
 // change background colours
-//
-//
+
+
 var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
 var currentIndex = 0;
 
