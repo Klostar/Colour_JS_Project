@@ -18,6 +18,9 @@ gridView.bindEvents();
 // const cellView = new CellView(colourItem);
 // cellView.bindEvents();
 
+
+//table of information from highchart to show information on
+//nations favourtie colour
 Highcharts.chart('container', {
   chart: {
     plotBackgroundColor: null,
