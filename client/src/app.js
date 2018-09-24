@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   gridView.bindEvents();
 
 
-  const information = document.querySelector('div#colour-info');
+  const information = document.querySelector('div#colour-item');
   const informationView = new InformationView(information);
   informationView.bindEvents();
 
