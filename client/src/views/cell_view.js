@@ -1,14 +1,19 @@
 const PubSub = require('../helpers/pub_sub.js');
 const Request = require('../helpers/request.js');
-const CellView = function (element) {
+
+
+const CellView = function (element,colour) {
 this.element = element;
+this.colour = colour;
 };
 
-CellView.prototype.render = function (colourItem) {
+CellView.prototype.render = function () {
   const name = document.createElement('h2');
-  name.textContent = colourItem.name;
+  name.textContent = this.colour.name;
   this.element.appendChild(name);
-  console.log(name);
+
+
+
 
 
 

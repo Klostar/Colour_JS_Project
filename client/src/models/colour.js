@@ -6,11 +6,14 @@ const Colour = function (url) {
 };
 
 
+
+
 Colour.prototype.getData = function () {
   const request = new Request(this.url);
   request.get()
   .then((colourItem) => {
     PubSub.publish('Colour:all-data',colourItem)
+    // console.log(colourItem);
   })
 .catch(console.err)
 };
