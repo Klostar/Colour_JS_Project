@@ -12,6 +12,19 @@ CellView.prototype.render = function () {
   name.textContent = this.colour.name.toUpperCase();
   this.element.appendChild(name);
 
+  //create square colour box for every colour.
+  const colourSquare = document.createElement('div');
+  // colourSquare.classList.add('square');
+  colourSquare.style.height = "50px";
+  colourSquare.style.width = "50px";
+  colourSquare.style.background = this.colour.colourValue
+  colourSquare.style.border ="1px solid black"
+  this.element.appendChild(colourSquare);
+
+  //colour the square using colourValue from API
+
+
+
   const symbolism = document.createElement('p')
   symbolism.textContent = this.colour.symbolism;
   this.element.appendChild(symbolism);
@@ -36,11 +49,6 @@ CellView.prototype.render = function () {
   const brandList = document.createElement('ul');
   this.populateBrandList(this.colour.brand, brandList);
   this.element.appendChild(brandList);
-
-  const colourSquare = document.createElement('div');
-  colourSquare.classList.add('square');
-  this.element.appendChild(colourSquare);
-  //create square colour box for every colour.
 
 
 };

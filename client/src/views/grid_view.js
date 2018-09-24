@@ -9,15 +9,7 @@ const GridView = function (element) {
 
 GridView.prototype.bindEvents = function () {
   PubSub.subscribe('Colour:all-data', (event) => {
-    // console.log(event.detail);
     this.render(event.detail);
-  // event.detail.forEach((colour) => {
-  //   const div = document.createElement('div');
-  //   div.classList.add('colour-item');
-  //   // this.element.appendChild('div');
-  //   const colourItem = new CellView(div)
-  //   colourItem.render(colour)
-    // console.log(colour) // recieving all the information from cellView.
 
   });
 };
