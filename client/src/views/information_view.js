@@ -10,6 +10,7 @@ this.colour = null;
 InformationView.prototype.bindEvents = function () {
   PubSub.subscribe("CellView:colour-selected", (event) => {
     this.colour = event.detail
+    this.render(this.colour)
 
   })
 };
