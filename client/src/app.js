@@ -13,11 +13,17 @@ const gridElement = document.querySelector('div#colours-list');
 const gridView = new GridView(gridElement);
 gridView.bindEvents();
 
-//
-// const colourItem = document.querySelector('div#colour-item');
-// const cellView = new CellView(colourItem);
-// cellView.bindEvents();
+// change background colours
+var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
+var currentIndex = 0;
 
+setInterval(function() {
+	document.body.style.cssText = "background-color: " + colors[currentIndex];
+	currentIndex++;
+	if (currentIndex == undefined || currentIndex >= colors.length) {
+		currentIndex = 0;
+	}
+}, 1000);
 
 //table of information from highchart to show information on
 //nations favourtie colour
