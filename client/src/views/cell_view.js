@@ -92,7 +92,6 @@ CellView.prototype.createTextElement = function (elementType, text) {
 
 };
 
-
   // const name = this.createHeading(colour.name);
   // colourContainer.appendChild(name)
   //
@@ -100,7 +99,5 @@ CellView.prototype.createTextElement = function (elementType, text) {
   // colourContainer.appendChild(symbolism)
   //
   // this.container.appendChild(colourContainer);
-
-
 
 module.exports = CellView;
