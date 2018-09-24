@@ -5,6 +5,12 @@
   border: 1px solid black;
 } */
 
+body{
+      font: 14px Helvetica;
+      transition: 5s cubic-bezier(1, 1, 1, 1);
+    	transition-delay: 0s;
+    }
+
 #bar-badge{
   font-size: 30px;
 }
@@ -20,12 +26,6 @@
     color: black;
 }
 
-
-body{
-      font: 14px Helvetica;
-      transition: 5s cubic-bezier(1, 1, 1, 1);
-    	transition-delay: 0s;
-    }
 
 #page-wrap {
       width: 600px;

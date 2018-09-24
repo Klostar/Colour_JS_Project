@@ -14,6 +14,8 @@ const gridView = new GridView(gridElement);
 gridView.bindEvents();
 
 // change background colours
+//
+//
 var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
 var currentIndex = 0;
 
@@ -32,6 +34,7 @@ setInterval(function() {
 
 
 //table of information from highchart to show information on
+//
 //nations favourtie colour
 Highcharts.chart('container', {
   chart: {
