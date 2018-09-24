@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const informationView = new InformationView(information);
   informationView.bindEvents();
 
-
 // change background colours
 //
 //
