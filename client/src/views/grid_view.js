@@ -16,6 +16,12 @@ GridView.prototype.bindEvents = function () {
   });
 };
 
+const randomColour = document.createElement('div');
+randomColour.classList.add('randomColour');
+let colourRand = Math.floor(Math.random()*16777215).toString(16);
+console.log(colourRand);
+
+
 GridView.prototype.render = function (colours) {
 colours.forEach((colour) => {
     const cellView = new CellView(this.element, colour);
