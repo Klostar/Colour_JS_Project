@@ -23,6 +23,13 @@ CellView.prototype.render = function () {
   this.populateAffectList(this.colour.affects, affectsList);
   this.element.appendChild(affectsList);
 
+  const randomFactTitle = this.createTextElement('h3',`Random Fact about ${this.colour.name}` )
+  this.element.appendChild(randomFactTitle);
+
+  const randomFact = document.createElement('h4')
+  randomFact.textContent = this.colour.randomFact;
+  this.element.appendChild(randomFact)
+
 };
 
 CellView.prototype.populateAffectList = function (affects, list) {
