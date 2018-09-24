@@ -3,3 +3,29 @@
   width: 50px;
   border: 1px solid black;
 }
+
+#top-bar {
+    text-align: center;
+    background: #222;
+    position: relative;
+
+    zoom: 1;
+    width: 100% !important;
+    z-index: 6000;
+    padding: 20px 0 20px;
+    color: white;
+}
+
+
+body{
+      font: 14px Georgia, serif;
+
+    }
+
+
+#page-wrap {
+      width: 600px;
+      margin: 80px auto;
+      background: white;
+      padding: 20px;
+    }
