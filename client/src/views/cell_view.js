@@ -12,6 +12,9 @@ CellView.prototype.render = function () {
   name.textContent = this.colour.name;
   this.element.appendChild(name);
 
+  const symbolism = document.createElement('p')
+  symbolism.textContent = this.colour.symbolism;
+  this.element.appendChild(symbolism)
 
 
 
