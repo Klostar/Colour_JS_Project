@@ -29,9 +29,12 @@ body{
 #colours-list{
   padding: 0px;
   margin: 0px;
+  background-color: white;
+
 }
 #colour-item{
   display: inline-block;
+
 }
 .square{
   display: grid;
