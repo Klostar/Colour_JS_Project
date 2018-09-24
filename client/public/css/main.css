@@ -22,7 +22,7 @@
 
 body{
       font: 14px Georgia, serif;
-      transition: 2s cubic-bezier(1, 1, 1, 1);
+      transition: 5s cubic-bezier(1, 1, 1, 1);
     	transition-delay: 0s;
     }
 

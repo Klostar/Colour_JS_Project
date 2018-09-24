@@ -20,10 +20,16 @@ var currentIndex = 0;
 setInterval(function() {
 	document.body.style.cssText = "background-color: " + colors[currentIndex];
 	currentIndex++;
+  //if current index is undefined, current index morethan or equal to coloir.length
+
 	if (currentIndex == undefined || currentIndex >= colors.length) {
 		currentIndex = 0;
 	}
-}, 1000);
+},
+
+1000);
+
+
 
 //table of information from highchart to show information on
 //nations favourtie colour
