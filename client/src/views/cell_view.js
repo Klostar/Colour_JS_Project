@@ -27,10 +27,6 @@ CellView.prototype.render = function () {
 
 });
 
-CellView.prototype.clearList = function () {
-  this.element.innerHTML = '';
-
-};
 
 // CellView.prototype.renderColourInfo = function (colour) {
 //   colour.forEach((colour) => {
