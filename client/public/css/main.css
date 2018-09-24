@@ -30,7 +30,9 @@ body{
   padding: 0px;
   margin: 0px;
 }
-
+#colour-item{
+  display: inline-block;
+}
 .square{
   display: grid;
   grid-template-columns: 100px 100px 100px;
