@@ -1,21 +1,22 @@
 const PubSub = require('../helpers/pub_sub.js');
 const Request = require('../helpers/request.js');
-const CellView = require('./cell_view.js');
 
 
-const InformationView = function () {
+const InformationView = function (element) {
 this.element = element;
 this.colour = null;
 };
 
 InformationView.prototype.bindEvents = function () {
   PubSub.subscribe("CellView:colour-selected", (event) => {
-    console.log(this.colour);
+    this.colour = event.detail
+
   })
 };
 
-
 InformationView.prototype.render = function () {
+  const colorInfo = document.createElement('div');
+
   const name = document.createElement('h2');
   name.textContent = this.colour.name.toUpperCase();
   this.element.appendChild(name);

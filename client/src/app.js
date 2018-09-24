@@ -7,13 +7,19 @@ const InformationView = require('./views/information_view.js');
 document.addEventListener('DOMContentLoaded', () => {
   // console.log('JavaScript Loaded');
   const url = 'http://localhost:3000/api/colour'
+
   const colour = new Colour(url)
-  // colour.bindEvents();
   colour.getData();
 
-const gridElement = document.querySelector('div#colours-list');
-const gridView = new GridView(gridElement);
-gridView.bindEvents();
+  const gridElement = document.querySelector('div#colours-list');
+  const gridView = new GridView(gridElement);
+  gridView.bindEvents();
+
+
+  const information = document.querySelector('div#colour-info');
+  const informationView = new InformationView(information);
+  informationView.bindEvents();
+
 
 // change background colours
 //

@@ -3,6 +3,7 @@ const Request = require('../helpers/request.js');
 const InformationView = require('./information_view.js');
 
 
+
 const CellView = function (element,colour) {
 this.element = element;
 this.colour = colour;
@@ -24,9 +25,27 @@ CellView.prototype.render = function () {
   colourSquare.addEventListener('click', (event) => {
   PubSub.publish("CellView:colour-selected", this.colour)
 
+});
 
-})
+CellView.prototype.clearList = function () {
+  this.element.innerHTML = '';
 
+};
+
+// CellView.prototype.renderColourInfo = function (colour) {
+//   colour.forEach((colour) => {
+//     const colourInfo = this.createColourListItem
+//
+//   })
+//
+// };
+//
+// // CellView.prototype.createColourListItem = function (colour) {
+//   const cellView = new CellView();
+//   const informationColour = informationView.createColourInformation(colour);
+//   return informationColour;
+//   console.log(informationColour);
+// };
 };
 
 
