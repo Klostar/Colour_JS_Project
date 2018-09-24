@@ -21,6 +21,11 @@ CellView.prototype.render = function () {
   colourSquare.style.border ="1px solid black"
   this.element.appendChild(colourSquare);
 
+  colourSquare.addEventListener('click', (event) => {
+  PubSub.publish("CellView:colour-selected", this.colour)
+
+
+})
 
 };
 

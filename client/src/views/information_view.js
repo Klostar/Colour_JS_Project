@@ -1,11 +1,19 @@
 const PubSub = require('../helpers/pub_sub.js');
 const Request = require('../helpers/request.js');
+const CellView = require('./cell_view.js');
 
 
-const InformationView = function (element,colour) {
+const InformationView = function () {
 this.element = element;
-this.colour = colour;
+this.colour = null;
 };
+
+InformationView.prototype.bindEvents = function () {
+  PubSub.subscribe("CellView:colour-selected", (event) => {
+    console.log(this.colour);
+  })
+};
+
 
 InformationView.prototype.render = function () {
   const name = document.createElement('h2');
@@ -36,9 +44,8 @@ InformationView.prototype.render = function () {
   const brandList = document.createElement('ul');
   this.populateBrandList(this.colour.brand, brandList);
   this.element.appendChild(brandList);
-
-
 };
+
 
 InformationView.prototype.populateAffectList = function (affects, list) {
   affects.forEach((affect) => {
@@ -46,8 +53,8 @@ InformationView.prototype.populateAffectList = function (affects, list) {
     const listItem = document.createElement('li');
     listItem.textContent = affect;
     list.appendChild(listItem)
+  });
 
-  })
 
 InformationView.prototype.populateBrandList = function (brand, list) {
   brand.forEach((brand) => {
@@ -55,9 +62,7 @@ InformationView.prototype.populateBrandList = function (brand, list) {
     brandListItem.textContent = brand;
     // console.log(this.colour.brand);
     list.appendChild(brandListItem)
-
-  })
-
+  });
 };
 
 
@@ -72,8 +77,7 @@ InformationView.prototype.createTextElement = function (elementType, text) {
   const element = document.createElement(elementType);
   element.textContent = text;
   return element;
-
-
 };
+
 
 module.exports = InformationView;
