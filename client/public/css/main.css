@@ -1,8 +1,9 @@
-.square {
+
+/* no longer needed .square {
   height: 50px;
   width: 50px;
   border: 1px solid black;
-}
+} */
 
 #bar-badge{
   font-size: 30px;
@@ -10,18 +11,18 @@
 
 #top-bar {
     text-align: center;
-    background: #222;
+    background: #FFFFFF;
     position: relative;
     zoom: 1;
     width: 100%;
     z-index: 6000;
     padding: 20px 0 20px;
-    color: white;
+    color: black;
 }
 
 
 body{
-      font: 14px Georgia, serif;
+      font: 14px Helvetica;
       transition: 5s cubic-bezier(1, 1, 1, 1);
     	transition-delay: 0s;
     }
