@@ -23,7 +23,7 @@ setInterval(function() {
 	document.body.style.cssText = "background-color: " + colors[currentIndex];
 	currentIndex++;
   //if current index is undefined, current index morethan or equal to coloir.length
-
+//Returns expr1 if it can be converted to true; otherwise, returns expr2.
 	if (currentIndex == undefined || currentIndex >= colors.length) {
 		currentIndex = 0;
 	}
