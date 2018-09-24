@@ -2,17 +2,12 @@ const PubSub = require('../helpers/pub_sub.js');
 const Request = require('../helpers/request.js');
 
 
-
 const InformationView = function (element,colour) {
 this.element = element;
 this.colour = colour;
 };
 
 InformationView.prototype.render = function () {
-  const name = document.createElement('h2');
-  name.textContent = this.colour.name.toUpperCase();
-  this.element.appendChild(name);
-
   const name = document.createElement('h2');
   name.textContent = this.colour.name.toUpperCase();
   this.element.appendChild(name);
@@ -45,7 +40,7 @@ InformationView.prototype.render = function () {
 
 };
 
-CellView.prototype.populateAffectList = function (affects, list) {
+InformationView.prototype.populateAffectList = function (affects, list) {
   affects.forEach((affect) => {
     // console.log(affect);
     const listItem = document.createElement('li');
@@ -54,7 +49,7 @@ CellView.prototype.populateAffectList = function (affects, list) {
 
   })
 
-CellView.prototype.populateBrandList = function (brand, list) {
+InformationView.prototype.populateBrandList = function (brand, list) {
   brand.forEach((brand) => {
     const brandListItem = document.createElement('li');
     brandListItem.textContent = brand;
@@ -73,8 +68,6 @@ InformationView.prototype.createList = function (label, property) {
   return element;
 };
 
-
-
 InformationView.prototype.createTextElement = function (elementType, text) {
   const element = document.createElement(elementType);
   element.textContent = text;
@@ -83,4 +76,4 @@ InformationView.prototype.createTextElement = function (elementType, text) {
 
 };
 
-module.exports = InformationView
+module.exports = InformationView;

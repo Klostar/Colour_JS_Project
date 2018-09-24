@@ -1,7 +1,7 @@
 const Colour = require('./models/colour.js');
 const CellView = require('./views/cell_view.js');
 const GridView = require('./views/grid_view.js');
-// const InformationView = require('./views/information_view')
+const InformationView = require('./views/information_view.js');
 
 
 document.addEventListener('DOMContentLoaded', () => {
