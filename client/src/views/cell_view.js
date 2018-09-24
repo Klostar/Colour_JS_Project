@@ -14,11 +14,14 @@ CellView.prototype.render = function () {
 
   const symbolism = document.createElement('p')
   symbolism.textContent = this.colour.symbolism;
-  this.element.appendChild(symbolism)
+  this.element.appendChild(symbolism);
+
+  const affectsTitle = this.createTextElement('h3','The Effect of this Colour is: ')
+  this.element.appendChild(affectsTitle);
 
   const affectsList = document.createElement('ul')
   this.populateAffectList(this.colour.affects, affectsList);
-  this.element.appendChild(affectsList)
+  this.element.appendChild(affectsList);
 
 };
 
@@ -38,7 +41,13 @@ CellView.prototype.createList = function (label,property) {
   return element;
 };
 
+CellView.prototype.createTextElement = function (elementType, text) {
+  const element = document.createElement(elementType);
+  element.textContent = text;
+  return element;
 
+
+};
 
 
 
