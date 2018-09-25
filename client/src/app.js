@@ -2,6 +2,7 @@ const Colour = require('./models/colour.js');
 const CellView = require('./views/cell_view.js');
 const GridView = require('./views/grid_view.js');
 const InformationView = require('./views/information_view.js');
+const RandomColourView = require('./views/random_colour_view.js');
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -19,6 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const information = document.querySelector('div#colour-item');
   const informationView = new InformationView(information);
   informationView.bindEvents();
+
+  const randomColourView = new RandomColourView();
+  randomColourView.render();
 
 // change background colours
 
@@ -97,11 +101,3 @@ Highcharts.chart('container', {
 
 
 });
-
-/// random colour function 
-
-const randomColour = document.createElement('div');
-randomColour.classList.add('randomColour');
-let colourRand = Math.floor(Math.random()*16777215).toString(16);
-let colourRandom = '#' + colourRand
-console.log(colourRandom);
