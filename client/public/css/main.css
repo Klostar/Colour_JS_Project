@@ -43,8 +43,8 @@ h3,h4{
   grid-gap: 10px;
   justify-content: center;
 
-
 }
+
 #colour-item{
   display: inline-block;
 }
@@ -60,5 +60,4 @@ h3,h4{
 
 .square:hover{
   border: 1px solid yellow;
-
 }
