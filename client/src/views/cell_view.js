@@ -16,10 +16,6 @@ CellView.prototype.render = function () {
   // create square colour box for every colour.
   const colourSquare = document.createElement('div');
   colourSquare.classList.add('square');
-  // colourSquare.style.height = "50px";
-  // colourSquare.style.width = "50px";
-  colourSquare.style.padding = "10px";
-  colourSquare.style.margin = "10px";
   colourSquare.style.background = this.colour.colourValue
   colourSquare.style.border ="1px solid black"
   this.element.appendChild(colourSquare);
