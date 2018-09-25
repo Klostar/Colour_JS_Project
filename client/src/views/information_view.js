@@ -27,6 +27,7 @@ InformationView.prototype.render = function () {
   this.element.appendChild(nameTitle);
 
   const name = document.createElement('h1');
+  name.classList.add('name')
   name.textContent = this.colour.name.toUpperCase();
   name.style.color = this.colour.colourValue
   this.element.appendChild(name);

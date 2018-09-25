@@ -53,6 +53,13 @@ h3,h4{
 
 .nameTitle{
   text-decoration: none;
+  float:left;
+  margin-top:-1px;
+  padding-left: 20px;
+}
+
+.name{
+  display: inline-block;
 }
 
 .square, .randomColour{
