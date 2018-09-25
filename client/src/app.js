@@ -103,3 +103,10 @@ Highcharts.chart('container', {
 
 
 });
+
+const randomColour = document.createElement('div');
+randomColour.classList.add('randomColour');
+let colourRand = Math.floor(Math.random()*16777215).toString(16);
+let colourRandom = '#' + colourRand
+
+console.log(colourRandom);
