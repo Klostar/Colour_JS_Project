@@ -9,12 +9,12 @@ RandomColourView.prototype.render = function () {
   let colourRand = Math.floor(Math.random()*16777215).toString(16);
   let colourRandom = '#' + colourRand
   randomColour.style.background = colourRandom;
-  colourCode.textContent = colourRandom;
+  colourCode.textContent = `The Colour Code is : ${colourRandom.toUpperCase()}`;
 
   const randomColourContainer = document.querySelector('#random-colour');
   randomColourContainer.appendChild(randomColour);
 
-randomColourContainer.appendChild(colourCode);
+  randomColourContainer.appendChild(colourCode);
 
 };
 
