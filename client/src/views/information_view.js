@@ -21,7 +21,8 @@ InformationView.prototype.render = function () {
   const colorInfo = document.createElement('div');
 
 
-  const nameTitle = this.createTextElement('h2','The colour you have selected is: ')
+  const nameTitle = this.createTextElement('h3','The colour you have selected is: ')
+  nameTitle.classList.add('nameTitle')
   nameTitle.textDecoration = "none;"
   this.element.appendChild(nameTitle);
 
