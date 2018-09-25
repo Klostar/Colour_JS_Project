@@ -4,7 +4,7 @@ body{
   transition-delay: 0s;
 }
 
-h2{
+h1{
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }

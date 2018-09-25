@@ -20,7 +20,12 @@ InformationView.prototype.render = function () {
   this.element.innerHTML = '';
   const colorInfo = document.createElement('div');
 
-  const name = document.createElement('h2');
+
+  const nameTitle = this.createTextElement('h2','The colour you have selected is: ')
+  nameTitle.textDecoration = "none;"
+  this.element.appendChild(nameTitle);
+
+  const name = document.createElement('h1');
   name.textContent = this.colour.name.toUpperCase();
   name.style.color = this.colour.colourValue
   this.element.appendChild(name);
