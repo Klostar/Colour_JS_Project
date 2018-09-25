@@ -7,7 +7,6 @@ const HighchartsView = require('./views/chart_view.js');
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  // console.log('JavaScript Loaded');
   const url = 'http://localhost:3000/api/colour'
 
   const colour = new Colour(url)
@@ -28,8 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const highchartsView = new HighchartsView();
   highchartsView.render();
 
-
-// change background colours
 
 var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
 var currentIndex = 0;
