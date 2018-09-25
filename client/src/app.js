@@ -22,17 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // change background colours
 
-
 var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
 var currentIndex = 0;
 
 setInterval(function() {
 	document.body.style.cssText = "background-color: " + colors[currentIndex];
 	currentIndex++;
-// current index + 1 - keeps counting up
-
-  //if current index is undefined, current index morethan or equal to colour.length
-//Returns expr1 if it can be converted to true; otherwise, returns expr2.
 	if (currentIndex == undefined || currentIndex >= colors.length) {
 		currentIndex = 0;
 	}
@@ -41,10 +36,9 @@ setInterval(function() {
 2000);
 
 
-
 //table of information from highchart to show information on
-//
 //nations favourtie colour
+
 Highcharts.chart('container', {
   chart: {
     plotBackgroundColor: null,
@@ -103,6 +97,8 @@ Highcharts.chart('container', {
 
 
 });
+
+/// random colour function 
 
 const randomColour = document.createElement('div');
 randomColour.classList.add('randomColour');
