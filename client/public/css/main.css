@@ -43,3 +43,9 @@ body{
   margin:10px;
   border: 1px solid black;
 }
+
+
+.square:hover{
+ border: 1px solid yellow;
+
+}
