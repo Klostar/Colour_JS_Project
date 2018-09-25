@@ -64,7 +64,6 @@ InformationView.prototype.populateBrandList = function (brand, list) {
   brand.forEach((brand) => {
     const brandListItem = document.createElement('li');
     brandListItem.textContent = brand;
-    // console.log(this.colour.brand);
     list.appendChild(brandListItem)
   });
 };

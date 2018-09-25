@@ -2,13 +2,10 @@ const PubSub = require('../helpers/pub_sub.js');
 const Request = require('../helpers/request.js');
 const InformationView = require('./information_view.js');
 
-
-
 const CellView = function (element,colour) {
 this.element = element;
 this.colour = colour;
 };
-
 
 
 CellView.prototype.render = function () {
@@ -20,10 +17,9 @@ CellView.prototype.render = function () {
   colourSquare.addEventListener('click', (event) => {
   PubSub.publish("CellView:colour-selected", this.colour)
 
-});
+  });
 
 };
-
 
 
 module.exports = CellView;
