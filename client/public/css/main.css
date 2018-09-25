@@ -1,38 +1,38 @@
 body{
-      font: 14px Helvetica;
-    	transition-delay: 0s;
-    }
+  font: 14px Helvetica;
+  transition-delay: 0s;
+}
 
 h2{
   -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: black;
 }
 
 h3,h4{
-      text-decoration: underline;
-    }
+  text-decoration: underline;
+}
 
 #bar-badge{
   font-size: 30px;
 }
 
 #top-bar {
-    text-align: center;
-    background: #FFFFFF;
-    position: relative;
-    zoom: 1;
-    width: 100%;
-    z-index: 6000;
-    padding: 20px 0 20px;
-    color: black;
-  }
+  text-align: center;
+  background: #FFFFFF;
+  position: relative;
+  zoom: 1;
+  width: 100%;
+  z-index: 6000;
+  padding: 20px 0 20px;
+  color: black;
+}
 
 #page-wrap {
-      width: 600px;
-      margin: 80px auto;
-      background: white;
-      padding: 20px;
-    }
+  width: 600px;
+  margin: 80px auto;
+  background: white;
+  padding: 20px;
+}
 
 #colours-list{
   padding: 0px;
@@ -59,6 +59,6 @@ h3,h4{
 
 
 .square:hover{
- border: 1px solid yellow;
+  border: 1px solid yellow;
 
 }
