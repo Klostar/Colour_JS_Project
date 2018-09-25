@@ -5,6 +5,11 @@ body{
     	transition-delay: 0s;
     }
 
+h2{
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+}
+
     h3,h4{
       text-decoration: underline;
     }

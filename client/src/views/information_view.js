@@ -22,6 +22,7 @@ InformationView.prototype.render = function () {
 
   const name = document.createElement('h2');
   name.textContent = this.colour.name.toUpperCase();
+  name.style.color = this.colour.colourValue
   this.element.appendChild(name);
 
   const symbolism = document.createElement('p')
