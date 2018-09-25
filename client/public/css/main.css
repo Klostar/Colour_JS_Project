@@ -1,7 +1,5 @@
 body{
       font: 14px Helvetica;
-      /* Define your own values in the cubic-bezier function. Possible values are numeric values from 0 to 1 */
-      transition: 5s cubic-bezier(1, 1, 1, 1);
     	transition-delay: 0s;
     }
 
@@ -10,7 +8,7 @@ h2{
    -webkit-text-stroke-color: black;
 }
 
-    h3,h4{
+h3,h4{
       text-decoration: underline;
     }
 
