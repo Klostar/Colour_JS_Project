@@ -38,6 +38,8 @@ Highcharts.chart('container', {
     type: 'pie',
     name: 'Nations Favourite Colours by Percentage',
     innerSize: '50%',
+    colors: ['Blue', 'Red', 'Purple', 'Green', 'Pink', 'Black','Yellow','Orange','White', 'Brown'],
+
     data: [
       ['Blue', 33],
       ['Red', 25],
