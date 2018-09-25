@@ -30,6 +30,9 @@ body{
   padding: 0px;
   margin: 0px;
   background-color: white;
+  display:grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
 
 }
 #colour-item{
@@ -44,6 +47,12 @@ body{
   border: 1px solid black;
 }
 
+.square{
+  display:grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+
+}
 
 .square:hover{
  border: 1px solid yellow;
