@@ -16,7 +16,7 @@ GridView.prototype.bindEvents = function () {
   });
 };
 
-//random colour on refresh of page
+//random colour on refresh of page - extension
 
 const randomColour = document.createElement('div');
 randomColour.classList.add('randomColour');
@@ -25,7 +25,7 @@ let colourRandom = '#' + colourRand
 
 console.log(colourRandom);
 
-
+/////
 
 GridView.prototype.render = function (colours) {
 colours.forEach((colour) => {
