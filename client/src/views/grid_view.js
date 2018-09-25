@@ -21,8 +21,9 @@ GridView.prototype.bindEvents = function () {
 const randomColour = document.createElement('div');
 randomColour.classList.add('randomColour');
 let colourRand = Math.floor(Math.random()*16777215).toString(16);
-this.colourRand = colourRand;
-console.log(colourRand);
+let colourRandom = '#' + colourRand
+
+console.log(colourRandom);
 
 
 
