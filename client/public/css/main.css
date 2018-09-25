@@ -9,10 +9,10 @@ h1{
   -webkit-text-stroke-color: black;
 }
 
-
 h3,h4{
   text-decoration: underline;
 }
+
 
 #bar-badge{
   font-size: 30px;
@@ -49,6 +49,7 @@ h3,h4{
 #colour-item{
   display: inline-block;
 }
+
 
 .nameTitle{
   text-decoration: none;
